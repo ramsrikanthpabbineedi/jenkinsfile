@@ -12,7 +12,7 @@ pipeline {
         }
         stage('terraform formate'){
             steps{
-                echo "terraform formate checking"
+                echo "terraform formate new checking"
                 sh 'terraform fmt -check -recursive'
             }
         }
