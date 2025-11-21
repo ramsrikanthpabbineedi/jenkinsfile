@@ -27,6 +27,6 @@ resource "aws_cloudwatch_metric_alarm" "foobar" {
   alarm_actions             = [aws_sns_topic.sns.arn]
   insufficient_data_actions = [aws_sns_topic.sns.arn]
   dimensions = {
-    instanceId = "i-0e5c2e6a95b52e21e"
+    InstanceId = "i-0e5c2e6a95b52e21e"
   }
 }
