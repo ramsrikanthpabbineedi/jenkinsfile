@@ -7,7 +7,7 @@ pipeline {
         stage('checkout'){
             steps{
                 echo "checking github repo"
-                git url: "https://github.com/ramsrikanthpabbineedi/jenkinsfile.git"
+                git branch: 'main',url: 'https://github.com/ramsrikanthpabbineedi/jenkinsfile.git'
             }
         }
         stage('terraform formate'){
